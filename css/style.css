@@ -1,0 +1,26 @@
+/* default colors */
+@import url(/css/colors.css);
+/* default fonts */
+@import url(/css/fonts.css);
+
+
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 900px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 480px) {
+    
+}
+
+@media only screen and (max-width: 320px) {
+    
+}
