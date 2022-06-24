@@ -4,12 +4,21 @@
 @import url(/css/fonts.css);
 
 /* General style settings */
+
 body {
     background-color: #F5F5F5 !important;
 }
 
 a {
     text-decoration: none !important;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
 }
 
 /* Main menu styling */
@@ -32,40 +41,52 @@ a {
     color: #000
 }
 
-.row.menu .menu-list.nav .button {
+.button, .button-orange {
+    font-weight: 600;
     cursor: pointer;
     border: 1px solid var(--orange);
     padding: 0.5em 1.5em;
     border-radius: 80px;
 }
 
-.row.menu .menu-list.nav .button a {
-    color: var(--orange);
-}
-
-.row.menu .menu-list.nav .button:last-child {
+.button-orange {
+    color: #fff;
     background-color: var(--orange);
 }
 
-.row.menu .menu-list.nav .button:last-child a {
-    color: #fff;
+.button a {
+    font-weight: 600 !important;
+    color: var(--orange) !important;
 }
 
+.button-orange a {
+    font-weight: 600 !important;
+    color: #fff !important;
+}
 
 svg.navbar-toggler.collapsed, svg.navbar-toggler {
-    width: 60px;
+    width: 50px;
     margin: 0;
     padding: 0;
 }
 
+/* section "Don’t wanna Make you have A bad day"*/
+h2.subtitle {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+}
 
 @media only screen and (max-width: 1024px) {
     
 }
 
 @media only screen and (max-width: 900px) {
+    .container {
+        padding: 0 2em !important;
+    }
+
     /* Main menu styling */
-    
     nav.navbar.navbar-expand-lg .container-fluid {
         justify-content: end;
         padding: 0;
@@ -81,10 +102,20 @@ svg.navbar-toggler.collapsed, svg.navbar-toggler {
         left: 0;
         width: 100vw;
     }
+
+    .row.menu .col-8 {
+        padding: 0 3px !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 480px) {
