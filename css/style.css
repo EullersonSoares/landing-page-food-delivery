@@ -64,6 +64,8 @@ svg.navbar-toggler.collapsed, svg.navbar-toggler {
 }
 
 @media only screen and (max-width: 900px) {
+    /* Main menu styling */
+    
     nav.navbar.navbar-expand-lg .container-fluid {
         justify-content: end;
         padding: 0;
@@ -71,6 +73,13 @@ svg.navbar-toggler.collapsed, svg.navbar-toggler {
 
     .navbar-nav {
         gap: 15px
+    }
+
+    div#navbarNav {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100vw;
     }
 }
 
