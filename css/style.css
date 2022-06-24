@@ -14,7 +14,7 @@ a {
 
 /* Main menu styling */
 .row.menu {
-    min-height: 90px;
+    min-height: 100px;
 }
 
 .row.menu .col-8 {
@@ -24,6 +24,7 @@ a {
 
 .row.menu .menu-list.nav {
     align-items: center;
+    width: 100%;
 }
 
 .row.menu .menu-list.nav a {
@@ -51,6 +52,11 @@ a {
 }
 
 
+svg.navbar-toggler.collapsed, svg.navbar-toggler {
+    width: 60px;
+    margin: 0;
+    padding: 0;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -58,7 +64,14 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
-    
+    nav.navbar.navbar-expand-lg .container-fluid {
+        justify-content: end;
+        padding: 0;
+    }
+
+    .navbar-nav {
+        gap: 15px
+    }
 }
 
 @media only screen and (max-width: 768px) {
