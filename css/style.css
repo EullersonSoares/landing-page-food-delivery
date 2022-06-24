@@ -3,13 +3,55 @@
 /* default fonts */
 @import url(/css/fonts.css);
 
+/* General style settings */
 body {
     background-color: #F5F5F5 !important;
 }
 
-.menu-list.nav {
+a {
+    text-decoration: none !important;
+}
+
+/* Main menu styling */
+.row.menu {
+    min-height: 90px;
+}
+
+.row.menu .col-8 {
+    display: grid;
     align-items: center;
 }
+
+.row.menu .menu-list.nav {
+    align-items: center;
+}
+
+.row.menu .menu-list.nav a {
+    font-weight: 500;
+    color: #000
+}
+
+.row.menu .menu-list.nav .button {
+    cursor: pointer;
+    border: 1px solid var(--orange);
+    padding: 0.5em 1.5em;
+    border-radius: 80px;
+}
+
+.row.menu .menu-list.nav .button a {
+    color: var(--orange);
+}
+
+.row.menu .menu-list.nav .button:last-child {
+    background-color: var(--orange);
+}
+
+.row.menu .menu-list.nav .button:last-child a {
+    color: #fff;
+}
+
+
+
 
 @media only screen and (max-width: 1024px) {
     
