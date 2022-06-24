@@ -3,7 +3,13 @@
 /* default fonts */
 @import url(/css/fonts.css);
 
+body {
+    background-color: #F5F5F5 !important;
+}
 
+.menu-list.nav {
+    align-items: center;
+}
 
 @media only screen and (max-width: 1024px) {
     
