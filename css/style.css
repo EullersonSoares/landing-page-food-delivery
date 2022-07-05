@@ -107,8 +107,26 @@ h2.subtitle + p {
 
 #lunch-time-image {max-width: 100%;}
 
-@media only screen and (max-width: 1024px) {
-    
+/*support-by section*/
+.container#support-by {
+    margin-bottom: 3em;
+}
+
+.container#support-by p {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #9C9C9C;
+}
+
+div#images-support {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#images-support img {
+    height: fit-content;
 }
 
 @media only screen and (max-width: 900px) {
@@ -181,6 +199,24 @@ h2.subtitle + p {
 
     .button {
         font-size: 14px;
+    }
+
+    /*support-by section*/
+    
+    .container#support-by p {
+        margin: 2em 0;
+    }
+
+    div#images-support {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    div#images-support img {
+        margin: 0 auto;
     }
 }
 
